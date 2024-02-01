@@ -9,12 +9,12 @@
     "start": "react-native start",
     "test": "jest",
     "pod:install-m1": "cd ios && arch -x86_64 pod install --repo-update && cd ..",
-    "clean": "rm -rf node_modules/ yarn.lock package-lock.json ios/Pods/ ios/Podfile.lock ios/build "
+    "clean": "rm -rf node_modules/ yarn.lock package-lock.json ios/Pods/ ios/Podfile.lock ios/build ",
+    "build:ios": "npx react-native  bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.73.3",
-    "react-native-vector-icons": "^10.0.3"
+    "react-native": "0.73.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
