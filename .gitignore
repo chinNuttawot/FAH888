@@ -27,6 +27,7 @@ ios/.xcode.env.local
 build/
 yarn.lock
 .idea
+.apk
 .gradle
 Podfile.lock
 local.properties
@@ -35,7 +36,7 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
-
+release
 # node.js
 #
 node_modules/
